@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bloomina </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/customize.css">
+</head>
+<body>
+  
+  <header>
+    <a href="http://127.0.0.1:5500/index.html" class="logo"> Bloomina </a>
+    <nav class="navbar">
+      <a href="http://127.0.0.1:5500/index.html">Home</a>
+      <a href="http://127.0.0.1:5500/customize.html">Customize</a>
+      </nav>
+  </header>
+</html>
+
+        <section id="bouquet">
+            <h1> Build Your Bouquet </h1>
+            <h3>Select Your Flower </h3>
+            <link rel="stylesheet" href="https://fonts.google.com/specimen/Lobster?preview.text=Build%20your%20bouquet%20&sort=popularity">
+            
+            <div id="flower-selection" class="grid-container">
+                <div class="grid-item">
+                    <img src="/image/daisy-removebg-preview.png" alt="Daisy">
+                    <p>Daisy</p>
+                    <span class="price"> &#8369; 50.00 </span>
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                    <input type="number" id="number" value="0" min="0" onchange="updateTotal()"/>
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/dhalia-removebg-preview.png" alt="Dahlia">
+                    <p> Dahlia</p>
+                    <span class="price"> &#8369; 120.00 </span>
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0"    min="0" onchange="updateTotal()"/>
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/lavender-removebg-preview.png" alt="Lavender">
+                    <p>Lavender</p>
+                    <span class="price"> &#8369; 90.00 </span>
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                    <input type="number" id="number" value="0" min="0" onchange="updateTotal()" />
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/2lips-removebg-preview.png" alt="tulips">
+                    <p>Tulips</p>
+                    <span class="price"> &#8369; 100.00 </span>
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                    <input type="number" id="number" value="0" min="0" onchange="updateTotal()"/>
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/babys_breath-removebg-preview.png" alt="babys breath">
+                    <p>Baby's breath</p>
+                    <span class="price"> &#8369; 90.00 </span>
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0" min="0" onchange="updateTotal()"/>
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/rose-removebg-preview.png" alt="Red Rose">
+                    <p>Red Rose</p>
+                    <span class="price"> &#8369; 100.00 </span>
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                    <input type="number" id="number" value="0" min="0" onchange="updateTotal()"/>
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                </div>
+                <div class="grid-item">
+                    <img src="/image/sunplaower-removebg-preview.png" alt="Sunflower">
+                    <p> Sunflower </p>
+                    <span class="price"> &#8369; 150.00 </span>
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                    <input type="number" id="number" value="0" min="0" onchange="updateTotal()" />
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                </div>
+            </div>
+            <section id="wrapper">
+                <h3>Select Your Wrapper</h3>
+                <div class="wrapper-selection">
+                    <div class="wrapper-item" onclick="selectWrapper('/image/wrapper1.png')">
+                        <img src="/image/wrapper 1.png" alt="Wrapper 1">
+                    </div>
+                    <div class="wrapper-item" onclick="selectWrapper('/image/wrapper2.jpg')">
+                        <img src="/image/wrapper 2.jpg" alt="Wrapper 2">
+                    </div>
+                    <div class="wrapper-item" onclick="selectWrapper('/image/wrapper3.jpg')">
+                        <img src="/image/wrapper 3.jpg" alt="Wrapper 3">
+                    </div>
+                </div>
+            </section>
+            
+           
+                <div class="total-container">
+                <span class="total">Total : ₱0.00</span>
+                </div>
+          
+            <div class="order">
+                <a href="http://127.0.0.1:5500/receipt.html"><button id="checkoutButton" disabled>Check Out</button></a>
+            </div>    
+            </div>
+        </section>  
+        </div>
+         </div>
+     </section>
+
+    <script src="/buttons.js"></script>
+
+    
+</body>
+</html>
+
+

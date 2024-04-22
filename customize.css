@@ -1,0 +1,284 @@
+:root {
+  --white: rgb(255, 255, 255); 
+}
+::-webkit-scrollbar{
+  width: 1rem;
+  height: .5rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(139, 34, 171);
+}
+
+
+
+* {
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem ;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 229, 180);
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .1rem 1rem rgb(0, 0, 0);
+}
+
+header .logo {
+  font-size: 4rem;
+  color: black;
+  font-weight: 600;
+  margin-left: 2rem; /* Added margin to push it to the left */
+}
+
+header .logo span {
+  color: var(--white);
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  margin-right: 2rem; /* Adjusting the gap between navbar links */
+  color: rgb(239, 131, 149);
+  font-size: 1.6rem; /* Adjusting font size */
+  font-weight: 500; /* Making font weight bold */
+}
+
+nav a:hover {
+  color: var(--white);
+}
+
+header .icons i{
+  font-size: 2.5rem;
+  color: rgb(239, 131, 149);
+  margin-left: 2.5rem;
+}
+
+  body , html{
+    height: 90%;
+    align-items: center;
+    margin: 0;
+
+  }
+
+  #bouquet {
+    flex-grow: 0;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    padding: 100px;
+    margin-top: 100px;
+  }
+  #bouquet h3{
+    flex-grow: 0;
+    font-size: 20px;
+    font-weight: 450;
+    font-style: normal;
+    text-align: left;
+    
+  }
+
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap to new line when they exceed container width */
+    gap: 10px;
+    align-items: flex-start; /* Align items to the start of the cross axis */
+  }
+
+  .grid-item {
+    flex: 0 0 calc(33.33% - 20px); /* Set flex basis to 33.33% minus the gap */
+    height: 200px;
+    width: 100px;
+    position: relative;
+    border: 1px solid #000000;
+    overflow: hidden;
+    margin-bottom: 10px; /* Add margin bottom to create gap between rows */
+    border-radius: 15px;
+
+  }
+
+  .grid-item img {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 35px;
+    padding: 15px;
+
+  }
+
+  .order button {
+    width: 20%;
+    padding: 10px;
+    background-color: #b9995f;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .grid-item {
+    position: relative; /* Ensure positioning is relative to the grid item */
+  }
+
+  .grid-item p {
+    position: absolute;
+    top: 0; /* Move the paragraph to the top */
+    right: 30%; /* Move the paragraph to the right */
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .grid-item span {
+    position: absolute;
+    top: 50px; /* Adjust top position as needed */
+    right: 40%; /* Move the span to the right */
+    font-size: 16px;
+  }
+
+
+  .wrapper-selection {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap to new line when they exceed container width */
+    gap: 10px;
+    align-items: flex-start; /* Align items to the start of the cross axis */
+  }
+
+  .wrapper-item {
+    flex: 0 0 calc(33.33% - 20px); /* Set flex basis to 33.33% minus the gap */
+    height: 200px;
+    width: 100px;
+    position: relative;
+    border: 1px solid #000000;
+    overflow: hidden;
+    margin-bottom: 10px; /* Add margin bottom to create gap between rows */
+    border-radius: 15px;
+
+  }
+
+  .wrapper-item img {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 35px;
+    padding: 15px;
+
+  }
+
+
+  .wrapper-item {
+    position: relative; /* Ensure positioning is relative to the grid item */
+  }
+
+  .wrapper-item p {
+    position: absolute;
+    top: 0; /* Move the paragraph to the top */
+    right: 30%; /* Move the paragraph to the right */
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .wrapper-item span {
+    position: absolute;
+    top: 50px; /* Adjust top position as needed */
+    right: 40%; /* Move the span to the right */
+    font-size: 16px;
+  }
+
+  
+    form {
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 50px;
+    }
+    
+    .value-button {
+      display: inline-block;
+      border: 1px solid #ddd;
+      margin-top: 90px; /* Remove the top margin */
+      margin-left: 30px; /* Remove the left margin */
+      height: 40px;
+      line-height: 40px; /* Center the text vertically */
+      width: 40px;
+      text-align: center;
+      background: #eee;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    
+    .value-button:hover {
+      cursor: pointer;
+    }
+    
+    form #decrease {
+      margin-right: -4px;
+      border-radius: 8px 0 0 8px;
+    }
+    
+    form #increase {
+      margin-left: -4px;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    /* form #input-wrap {
+      margin: 0px;
+      padding: 0px;
+    } */
+    
+    input#number {
+      text-align: center;
+      border: none;
+      margin-top: 100px; /* Remove the top margin */
+      margin-left: 10px; /* Remove the left margin */
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      width: 40px;
+      height: 40px;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }

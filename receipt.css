@@ -1,0 +1,178 @@
+:root {
+  --white: rgb(255, 255, 255); 
+}
+::-webkit-scrollbar{
+  width: 1rem;
+  height: .5rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(139, 34, 171);
+}
+
+
+
+* {
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem ;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 229, 180);
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .1rem 1rem rgb(0, 0, 0);
+}
+
+header .logo {
+  font-size: 4rem;
+  color: black;
+  font-weight: 600;
+  margin-left: 2rem; /* Added margin to push it to the left */
+}
+
+header .logo span {
+  color: var(--white);
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  margin-right: 2rem; /* Adjusting the gap between navbar links */
+  color: rgb(239, 131, 149);
+  font-size: 1.6rem; /* Adjusting font size */
+  font-weight: 500; /* Making font weight bold */
+}
+
+nav a:hover {
+  color: var(--white);
+}
+
+header .icons i{
+  font-size: 2.5rem;
+  color: rgb(239, 131, 149);
+  margin-left: 2.5rem;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background: linear-gradient(90deg,wheat , 60%, #daaacc 40.1%);
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 50px;
+  margin-top: 7px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #970692;
+  font-weight: 300;
+  color:#000000;
+  margin-top: 5px;
+  cursor: pointer;
+} 
+
+.container form .submit-btn:hover{
+  background: #b10a90;
+}

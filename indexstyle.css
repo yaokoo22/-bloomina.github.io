@@ -1,0 +1,106 @@
+:root {
+  --white: rgb(255, 255, 255); 
+}
+::-webkit-scrollbar{
+  width: 1rem;
+  height: .5rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(139, 34, 171);
+}
+
+
+
+* {
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem ;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 229, 180);
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .1rem 1rem rgb(0, 0, 0);
+}
+
+header .logo {
+  font-size: 4rem;
+  color: black;
+  font-weight: 600;
+  margin-left: 2rem; /* Added margin to push it to the left */
+}
+
+header .logo span {
+  color: var(--white);
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  margin-right: 2rem; /* Adjusting the gap between navbar links */
+  color: rgb(239, 131, 149);
+  font-size: 1.6rem; /* Adjusting font size */
+  font-weight: 500; /* Making font weight bold */
+}
+
+nav a:hover {
+  color: var(--white);
+}
+
+.bg {
+  background-image: url('image/429575513_907187791100524_722226539331302251_n.jpg'); /* Replace 'your-image.jpg' with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+header .icons i{
+  font-size: 2.5rem;
+  color: rgb(239, 131, 149);
+  margin-left: 2.5rem;
+}
+.tagline {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 7rem;
+    font-family: 'Dancing Script', cursive, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a shadow for better visibility */
+  }
+
+
+  

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bloomina </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/receipt.css">
+</head>
+<body>
+  
+  <header>
+    <a href="http://127.0.0.1:5500/index.html" class="logo"> Bloomina </a>
+    <nav class="navbar">
+      <a href="http://127.0.0.1:5500/index.html">Home</a>
+      <a href="http://127.0.0.1:5500/customize.html">Customize</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <form id="checkoutForm">
+        <div class="row">
+            <div class="col">
+                <h3 class="title">billing address</h3>
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" id="fullName" placeholder="" required>
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" id="email" placeholder="" required>
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" id="address" placeholder="" required>
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" id="city" placeholder="" required>
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" id="state" placeholder="" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" id="zipCode" placeholder="" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h3 class="title">payment method</h3>
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="image/payment method.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name of the number :</span>
+                    <input type="text" id="cardName" placeholder="" required>
+                </div>
+                <div class="inputBox">
+                    <span>phone number :</span>
+                    <input type="number" id="phoneNumber" placeholder="" required>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+    </form>
+  </div>
+
+<script>
+    document.getElementById("checkoutForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        var fullName = document.getElementById("fullName").value;
+        var email = document.getElementById("email").value;
+        var address = document.getElementById("address").value;
+        var city = document.getElementById("city").value;
+        var state = document.getElementById("state").value;
+        var zipCode = document.getElementById("zipCode").value;
+        var cardName = document.getElementById("cardName").value;
+        var phoneNumber = document.getElementById("phoneNumber").value;
+
+        if (!fullName || !email || !address || !city || !state || !zipCode || !cardName || !phoneNumber) {
+            alert("Please fill out all fields before proceeding.");
+        } else {
+            alert("Order Successful!");
+        }
+    });
+</script>
+
+</body>
+</html>
